@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#!dosya yolunu aldık
+
+read -p "Lütfen metin dosyasının yolunu girin: " dosya_yolu
+read -p "lütfen bir kelime giriniz: " kelime
+
+kelime_filtreleme=$(grep --color=always "$kelime" "$dosya_yolu")
+
+echo "$kelime_filtreleme"

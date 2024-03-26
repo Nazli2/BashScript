@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#!dosya yolunu aldık
+
+read -p "Lütfen metin dosyasının yolunu girin: " dosya_yolu
+
+#tr -s ardışık olarak tekrarlayan karakterleri birleştirerek sadece bir tane karakter olarak yazar
+#tr -d noktalamaları kaldırır
+#tr '[:upper:]' '[:lower:]' metindeki büyük harfleri küçük harflere dönüştürür
+#sort kelimeleri alfabetik olarak sıralar
+#uniq -c ardışık kelimeleri birleştirir ve kaç kez tekrarlandığını yazar
+ 
+kelime_frekanslari=$(tr -s '[:space:]' '\n' < "$dosya_yolu" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]'| sort | uniq -c)
+
+echo "$kelime_filtreleme"
