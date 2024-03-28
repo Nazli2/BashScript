@@ -1,0 +1,5 @@
+#!/bin/bash
+#In this challenge, we practice using the awk command for text-munging and data processing tasks.
+awk '{ if ($1 =="" || $2 == "" || $3 == "" || $4 == "")
+print "Not all scores are available for",$1;
+}'$1 ; 
