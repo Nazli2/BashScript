@@ -1,0 +1,7 @@
+#!Dizin İçeriğini Yedekleme Bash Betiği
+
+#!/bin/bash
+kaynak="/path/to/kaynak_dizin"
+hedef="/path/to/hedef_dizin"
+cp -r "$kaynak" "$hedef"
+echo "Dizin yedekleme tamamlandı: $kaynak -> $hedef"

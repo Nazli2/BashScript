@@ -1,0 +1,6 @@
+#!Kullanıcıdan Bilgi Alma Bash Betiği
+
+#!/bin/bash
+echo "Adınızı girin: "
+read isim
+echo "Merhaba, $isim!"

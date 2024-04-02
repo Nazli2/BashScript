@@ -1,0 +1,4 @@
+#!Merhaba Dünya Bash Betiği
+
+#!/bin/bash
+echo "Merhaba, Dünya!"

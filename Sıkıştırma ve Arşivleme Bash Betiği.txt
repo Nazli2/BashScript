@@ -1,0 +1,7 @@
+#!Sıkıştırma ve Arşivleme Bash Betiği
+
+#!/bin/bash
+dizin="/path/to/dizin"
+arsiv_adi="arsiv.tar.gz"
+tar -czvf "$arsiv_adi" "$dizin"
+echo "Arşiv oluşturuldu: $arsiv_adi"

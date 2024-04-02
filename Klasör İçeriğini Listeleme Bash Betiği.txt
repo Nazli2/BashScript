@@ -1,0 +1,5 @@
+#!Klasör İçeriğini Listeleme Bash Betiği
+
+#!/bin/bash
+dizin="/path/to/dizin"
+ls "$dizin"

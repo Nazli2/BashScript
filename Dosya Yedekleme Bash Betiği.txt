@@ -1,0 +1,7 @@
+#!Dosya Yedekleme Bash Betiği
+
+#!/bin/bash
+kaynak="/path/to/kaynak_dosya"
+hedef="/path/to/yedek_dosya"
+cp "$kaynak" "$hedef"
+echo "Yedekleme tamamlandı: $kaynak -> $hedef

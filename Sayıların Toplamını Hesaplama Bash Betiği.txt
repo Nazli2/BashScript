@@ -1,0 +1,11 @@
+#!Sayıların Toplamını Hesaplama Bash Betiği
+
+#!/bin/bash
+echo "Sayıları girin (boşlukla ayırın): "
+read -a sayilar
+toplam=0
+for sayi in "${sayilar[@]}"; do
+  let toplam+=sayi
+done
+echo "Toplam: $toplam"
+
